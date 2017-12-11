@@ -4,7 +4,7 @@ const client = new Discord.Client();
 client.on('ready', () => {
     console.log('I am ready!');
     client.user.setStatus('Online')
-    client.user.setPresence({ game: { name: '真夏の夜の淫夢', type: 2 }});
+    client.user.setPresence({ game: { name: '何でもしますから！', type: 2 }});
 });
 
 client.on('message', message => {
