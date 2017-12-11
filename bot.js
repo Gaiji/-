@@ -4,7 +4,7 @@ const client = new Discord.Client();
 client.on('ready', () => {
     console.log('I am ready!');
     client.user.setStatus('Online')
-    client.user.setPresence({ game: { name: '真夏の夜の淫夢', type: 1, url: 'https://www.twitch.tv/truepixels' }});
+    client.user.setPresence({ game: { name: '真夏の夜の淫夢', type: 1, url: 'http://dic.nicovideo.jp/a/真夏の夜の淫夢' }});
 });
 
 client.on('message', message => {
