@@ -11,6 +11,12 @@ client.on('message', message => {
     if (message.content.startsWith("何でもします") || message.content.startsWith("なんでもします")) {
     	message.reply("今何でもするって言ったよね？");
   	}
+    if (message.content.startsWith("114514") || message.content.startsWith("１１４５１４")) {
+        message.reply("良いよ！来いよ！");
+    }
+    if (message.content.startsWith("いきすぎ") || message.content.startsWith("イキスギ")) {
+        message.reply("イキスギｨ！！　イクイクイク、ｯッ！アッｯ！！");
+    }
 });
 
 client.login(process.env.BOT_TOKEN);
