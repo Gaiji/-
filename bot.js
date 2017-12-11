@@ -7,13 +7,9 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-    if (message.content === "hello"){
-        message.reply("hello");
-    }
-    if (message.content.startsWith("何でもします")) {
+    if (message.content.startsWith("何でもします") || message.content.startsWith("なんでもします")) {
     	message.reply("今何でもするって言ったよね？");
   	}
 });
 
-// THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
