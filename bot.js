@@ -7,7 +7,7 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-    if (message.equals("hello")){
+    if (message.content === "hello"){
         message.reply("hello");
     }
     if (message.equals("何でもします") || message.equals("なんでもします")) {
