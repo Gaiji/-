@@ -15,7 +15,7 @@ client.on('message', message => {
         message.reply("良いよ！来いよ！");
     }
     if (message.content.startsWith("いきすぎ") || message.content.startsWith("イキスギ")) {
-        var member= message.mentions.members.first();
+        var member= message.mentions.members;
         message.reply("イキスギｨ！！　イクイクイク、ｯッ！アッｯ！！" + member);
     }
 });
