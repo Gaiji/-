@@ -10,7 +10,7 @@ client.on('message', message => {
     if (message.content === "hello"){
         message.reply("hello");
     }
-    if (message.content.equals("何でもします")) {
+    if (message.content.startsWith("何でもします")) {
     	message.reply("今何でもするって言ったよね？");
   	}
 });
