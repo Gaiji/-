@@ -15,8 +15,14 @@ client.on('message', message => {
         message.reply("良いよ！来いよ！");
     }
     if (message.content.startsWith("いきすぎ") || message.content.startsWith("イキスギ")) {
-        var member= message.mentions.members;
-        message.reply("イキスギｨ！！　イクイクイク、ｯッ！アッｯ！！" + member);
+        message.reply("イキスギｨ！！　イクイクイク、ｯッ！アッｯ！！");
+        member.kick().then(('@害児#3744') => {
+            // Successmessage
+            message.channel.send(":wave: " + member.displayName + " has been successfully kicked :point_right: ");
+        }).catch(() => {
+             // Failmessage
+            message.channel.send("Access Denied");
+        });
     }
 });
 
